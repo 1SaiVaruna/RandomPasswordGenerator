@@ -30,12 +30,18 @@
 
         const symbol = "@#$%^&*()_=~|}{[]<>/-=";
         
+        const allChar = uppercase + lowerCase + number + symbol
+
         function createPassword(){
             let password = "";
             password += upperCase[Math.floor(Math.random() * upperCase.Length)];
             password += lowerCase[Math.floor(Math.random() * lowerCase.Length)];
             password += number[Math.floor(Math.random() * number.Length)];
             password += symbol[Math.floor(Math.random() * symbol.Length)];
+
+            while(length > password.length){
+
+            }
         }
     </script>
 </body>
