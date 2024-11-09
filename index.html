@@ -40,7 +40,7 @@
             password += symbol[Math.floor(Math.random() * symbol.Length)];
 
             while(length > password.length){
-                password += allChar[Math.floor(Math.random() * allChar.Length)];
+                password += allChar[Math.floor(Math.random() * allChar.length)];
             }
 
             passwordBox.value = password;
