@@ -14,7 +14,7 @@
             <img src="images/copy.png">
         </div>
 
-        <button><img src="images/generate.png">GENERATE PASSWORD</button>
+        <button onclick="createPassword()"><img src="images/generate.png">GENERATE PASSWORD</button>
     </div>
 
     <script>
@@ -42,6 +42,8 @@
             while(length > password.length){
                 password += allChar[Math.floor(Math.random() * allChar.Length)];
             }
+
+            passwordBox.value = password;
         }
     </script>
 </body>
